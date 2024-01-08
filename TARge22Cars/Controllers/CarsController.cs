@@ -44,10 +44,12 @@ namespace Targe22Cars.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CarCreateUpdateViewModel vm)
         {
-            var dto = new CarDto()
+                var dto = new CarDto()
             {
                 Id = vm.Id,
                 Name = vm.Name,
+                EnginePower = vm.EnginePower,
+                FuelConsumption = vm.FuelConsumption,
                 CreatedAt = vm.CreatedAt,
                 ModifiedAt = vm.ModifiedAt,
             };
@@ -77,6 +79,7 @@ namespace Targe22Cars.Controllers
             vm.Id = car.Id;
             vm.Name = car.Name;
             vm.EnginePower = car.EnginePower;
+            vm.FuelConsumption = car.FuelConsumption;
             vm.CreatedAt = car.CreatedAt;
             vm.ModifiedAt = car.ModifiedAt;
 
@@ -92,6 +95,7 @@ namespace Targe22Cars.Controllers
                 Id = vm.Id,
                 Name = vm.Name,
                 EnginePower = vm.EnginePower,
+                FuelConsumption = vm.FuelConsumption,
                 CreatedAt = vm.CreatedAt,
                 ModifiedAt = vm.ModifiedAt
             };
@@ -122,6 +126,7 @@ namespace Targe22Cars.Controllers
             vm.Id = car.Id;
             vm.Name = car.Name;
             vm.EnginePower = car.EnginePower;
+            vm.FuelConsumption = car.FuelConsumption;
             vm.CreatedAt = car.CreatedAt;
             vm.ModifiedAt = car.ModifiedAt;
 
@@ -142,6 +147,8 @@ namespace Targe22Cars.Controllers
 
             vm.Id = car.Id;
             vm.Name = car.Name;
+            vm.EnginePower = car.EnginePower;
+            vm.FuelConsumption = car.FuelConsumption;
             vm.CreatedAt = car.CreatedAt;
             vm.ModifiedAt = car.ModifiedAt;
 

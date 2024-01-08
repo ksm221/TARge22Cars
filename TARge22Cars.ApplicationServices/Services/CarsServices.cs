@@ -24,6 +24,9 @@ namespace TARge22Cars.ApplicationServices.Services
             Car car = new Car();
 
             car.Id = Guid.NewGuid();
+            car.Name = dto.Name;
+            car.EnginePower = dto.EnginePower;
+            car.FuelConsumption = dto.FuelConsumption;
             car.CreatedAt = DateTime.Now;
             car.ModifiedAt = DateTime.Now;
 
@@ -47,6 +50,9 @@ namespace TARge22Cars.ApplicationServices.Services
             var domain = new Car()
             {
                 Id = dto.Id,
+                Name = dto.Name,
+                EnginePower = dto.EnginePower,
+                FuelConsumption = dto.FuelConsumption,
                 CreatedAt = dto.CreatedAt,
                 ModifiedAt = DateTime.Now,
             };
