@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TARge22Cars.Core.Domain
+﻿namespace TARge22Cars.Core.Domain
 {
-    internal class Car
+    public class Car
     {
+        public Guid? Id { get; set; }
+        public string Name { get; set; }
+        public int EnginePower { get; set; }
+        public int FuelConsumption { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime ModifiedAt { get; set; }
+
     }
 }

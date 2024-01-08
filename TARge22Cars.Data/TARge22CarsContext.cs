@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using TARge22Cars.Core.Domain;
 
 namespace TARge22Cars.Data
 {
-    internal class TARge22CarsContext
+    public class TARge22CarsContext : DbContext
     {
+        public TARge22CarsContext(DbContextOptions<TARge22CarsContext> options) : base(options)
+        {
+
+        }
+
+        public DbSet<Car> Cars { get; set; }
     }
 }
