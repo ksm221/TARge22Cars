@@ -18,6 +18,7 @@
             <tr>
                 <th scope="col">Nr</th>
                 <th scope="col">Name</th>
+                <th scope="col">Price</th>
                 <th></th>
             </tr>
         </thead>
@@ -27,6 +28,7 @@
                 <tr>
                     <td>@rowNumber</td>
                     <td>@cars.Name</td>
+                    <td>@cars.Price</td>
                     <td>
                         <a asp-action="details" asp-controller="cars" asp-route-id="@cars.Id" class="btn btn-info">Details</a>
                         <a asp-action="update" asp-controller="cars" asp-route-id="@cars.Id" class="btn btn-primary">Update</a>

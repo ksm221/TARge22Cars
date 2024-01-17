@@ -25,6 +25,7 @@ namespace TARge22Cars.ApplicationServices.Services
 
             car.Id = Guid.NewGuid();
             car.Name = dto.Name;
+            car.Price = dto.Price;
             car.EnginePower = dto.EnginePower;
             car.FuelConsumption = dto.FuelConsumption;
             car.CreatedAt = DateTime.Now;
@@ -51,6 +52,7 @@ namespace TARge22Cars.ApplicationServices.Services
             {
                 Id = dto.Id,
                 Name = dto.Name,
+                Price = dto.Price,
                 EnginePower = dto.EnginePower,
                 FuelConsumption = dto.FuelConsumption,
                 CreatedAt = dto.CreatedAt,

@@ -28,6 +28,7 @@ namespace Targe22Cars.Controllers
                 {
                     Id = x.Id,
                     Name = x.Name,
+                    Price = x.Price,
                 });
 
             return View(result);
@@ -48,6 +49,7 @@ namespace Targe22Cars.Controllers
             {
                 Id = vm.Id,
                 Name = vm.Name,
+                Price = vm.Price,
                 EnginePower = vm.EnginePower,
                 FuelConsumption = vm.FuelConsumption,
                 CreatedAt = vm.CreatedAt,
@@ -78,6 +80,7 @@ namespace Targe22Cars.Controllers
 
             vm.Id = car.Id;
             vm.Name = car.Name;
+            vm.Price = car.Price;
             vm.EnginePower = car.EnginePower;
             vm.FuelConsumption = car.FuelConsumption;
             vm.CreatedAt = car.CreatedAt;
@@ -94,6 +97,7 @@ namespace Targe22Cars.Controllers
             {
                 Id = vm.Id,
                 Name = vm.Name,
+                Price = vm.Price,
                 EnginePower = vm.EnginePower,
                 FuelConsumption = vm.FuelConsumption,
                 CreatedAt = vm.CreatedAt,
@@ -125,6 +129,7 @@ namespace Targe22Cars.Controllers
 
             vm.Id = car.Id;
             vm.Name = car.Name;
+            vm.Price = car.Price;
             vm.EnginePower = car.EnginePower;
             vm.FuelConsumption = car.FuelConsumption;
             vm.CreatedAt = car.CreatedAt;
@@ -147,6 +152,7 @@ namespace Targe22Cars.Controllers
 
             vm.Id = car.Id;
             vm.Name = car.Name;
+            vm.Price= car.Price;
             vm.EnginePower = car.EnginePower;
             vm.FuelConsumption = car.FuelConsumption;
             vm.CreatedAt = car.CreatedAt;
